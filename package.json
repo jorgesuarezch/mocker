@@ -1,0 +1,52 @@
+{
+  "name": "gravy-mock-server",
+  "version": "1.0.0",
+  "description": "Mocks gravy responses",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "build": "webpack --silent",
+    "start": "yarn build && node -r dotenv/config dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "mock",
+    "server",
+    "node",
+    "express"
+  ],
+  "author": "jorgesuarezch",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "fast-deep-equal": "^2.0.1",
+    "lodash": "^4.17.11",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.0.13",
+    "@types/lodash": "^4.14.134",
+    "@types/node": "^12.0.5",
+    "@types/uuid": "^3.4.4",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
